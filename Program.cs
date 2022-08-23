@@ -10,22 +10,21 @@ Console.WriteLine(st);
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 string numbers = Convert.ToString(num);
-int i = 0;
+int i1 = 0;
 int sum = 0;
-while (numbers.Length > i) {sum += int.Parse(Convert.ToString(numbers[i])); i++;}
+while (numbers.Length > i1) {sum += int.Parse(Convert.ToString(numbers[i1])); i1++;}
 Console.WriteLine(sum);
 //Задача 29
 Console.WriteLine("Введите длину масива");
 int N = Convert.ToInt32(Console.ReadLine());
 int[] NArray = new int[N];
-int i = 0;
+int i2 = 0;
 string Znak = ",";
 Console.Write("[");
-while ( i < NArray.Length)
+while ( i2 < NArray.Length)
 {
- NArray[i] = new Random().Next(1,99);
- if (i == NArray.Length-1) {Znak = "]";}
- Console.Write(NArray[i] + Znak);
-  i++;
+ NArray[i2] = new Random().Next(1,99);
+ if (i2 == NArray.Length-1) {Znak = "]";}
+ Console.Write(NArray[i2] + Znak);
+  i2++;
 }
-
